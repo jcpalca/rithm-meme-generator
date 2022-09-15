@@ -8,7 +8,7 @@
   <title>Meme Generator</title>
 </head>
 <body>
-  <form>
+  <form type="submit">
     <div class="form-wrapper">
       <div class="form-title">
         <h1>Meme Generator</h1>
@@ -27,10 +27,11 @@
         <input type="text" id="bottom-text" placeholder="(Optional) Enter text at the bottome of the meme">
       </div>
       <div class="submit-button">
-        <button type="submit">Generate Meme</button>
+        <button type="submit" class="disabled" disabled>Generate Meme</button>
       </div>
     </div>
   </form>
+  <div class="meme-creations"></div>
   <script src="script.js"></script>
 </body>
 </html>
