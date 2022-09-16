@@ -75,15 +75,12 @@ function resetPreview() {
 
 function showTrashBin(e) {
   if(e.target && e.target.nodeName === "IMG") {
-    e.target.parentElement.lastChild.innerHTML = '<i class="fa-solid fa-trash" aria-hidden="true"></i>';
+    e.target.parentElement.parentElement.lastChild.innerHTML = '<i class="fa-solid fa-trash" aria-hidden="true"></i>';
   }
 }
 
 function deleteMeme(e) {
-  if(e.target && e.target.nodeName === "IMG") {
-    e.target.parentElement.parentElement.remove();
-  }
-  if(e.target && e.target.nodeName === "I") {
+  if(e.target && e.target.nodeName === "IMG" || e.target.nodeName === "I") {
     e.target.parentElement.parentElement.parentElement.remove();
   }
 }
