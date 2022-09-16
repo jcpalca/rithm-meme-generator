@@ -80,7 +80,7 @@ function showTrashBin(e) {
 }
 
 function deleteMeme(e) {
-  if(e.target && e.target.nodeName === "IMG" || e.target.nodeName === "I") {
+  if(e.target && e.target.nodeName === "IMG" || e.target.nodeName === "I" || e.target.nodeName === "P") {
     e.target.parentElement.parentElement.parentElement.remove();
   }
 }
