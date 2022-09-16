@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/e3ed15b837.js" crossorigin="anonymous"></script>
   <title>Meme Generator</title>
 </head>
 <body>
@@ -27,11 +28,25 @@
         <input type="text" id="bottom-text" placeholder="(Optional) Enter text at the bottome of the meme">
       </div>
       <div class="submit-button">
-        <button type="submit" class="disabled" disabled>Generate Meme</button>
+        <button type="submit" class="disabled" id="submit" disabled>Generate Meme</button>
       </div>
     </div>
   </form>
-  <div class="meme-creations"></div>
+  <div class="preview">
+    <div class="preview-title">
+      <h1>Preview</h1>
+    </div>
+    <div class="meme">
+      <div class="meme-top-text"></div>
+      <img src="preview/doge-meme.png" id="preview">
+      <div class="meme-bottom-text"></div>
+    </div>
+  </div>
+  <div class="gallery">
+    <div class="gallery-title">
+      <h1>Gallery</h1>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
