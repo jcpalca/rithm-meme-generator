@@ -3,6 +3,7 @@
 /*==================================*/
 html {
   background-color: rgba(255, 255, 0, 0.35);
+  font-family: "Comic Sans MS", "Comic Sans", Arial, sans-serif;
 }
 
 body, h1, h2 {
@@ -18,7 +19,6 @@ body, h1, h2 {
 /*===============FORM===============*/
 /*==================================*/
 form {
-  font-family: "Comic Sans MS", "Comic Sans", Arial, sans-serif;
   background-color: rgb(135, 206, 235);
   padding-bottom: 10px;
 }
@@ -66,7 +66,84 @@ button {
   border-radius: 10px;
 }
 
+button:not([disabled]) {
+  cursor: pointer;
+}
+
 .disabled {
   opacity: 0.6;
   cursor: not-allowed;
+}
+
+/*==================================*/
+/*==========PREVIEW & GALLERY=======*/
+/*==================================*/
+.preview-title, .gallery-title {
+  text-align: center;
+  margin: 15px;
+}
+
+.meme {
+  text-align: center;
+  position: relative;
+}
+
+.meme img {
+  border-radius: 10px;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.meme-top-text {
+  position: absolute;
+  z-index: 999;
+  font-family: "Impact";
+  color: #fff;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+  text-transform: uppercase;
+  top: 2%;
+  left: 10%;
+  right: 10%;
+  font-size: 40px;
+}
+
+.meme-bottom-text {
+  position: absolute;
+  z-index: 999;
+  font-family: "Impact";
+  color: #fff;
+  text-shadow: 2px 0 0 #000, 0 -2px 0 #000, 0 2px 0 #000, -2px 0 0 #000;
+  text-transform: uppercase;
+  bottom: 2%;
+  left: 10%;
+  right: 10%;
+  font-size: 40px;
+}
+
+.memeDiv {
+  display: inline-block;
+  margin: 20px;
+}
+
+.trashBinDiv {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.gallery .meme:hover img {
+  opacity: 0.3;
+}
+.gallery .meme:hover .trashBinDiv {
+  opacity: 1;
+}
+
+.fa-trash {
+  color: #000;
+  font-size: 50px;
 }
