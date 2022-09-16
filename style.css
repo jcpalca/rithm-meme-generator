@@ -6,7 +6,7 @@ html {
   font-family: "Comic Sans MS", "Comic Sans", Arial, sans-serif;
 }
 
-body, h1, h2 {
+body, h1, h2, p {
   margin: 0;
 }
 
@@ -138,9 +138,11 @@ button:not([disabled]) {
 
 .gallery .meme:hover .meme-template {
   opacity: 0.3;
+  cursor: pointer;
 }
 .gallery .meme:hover .trashBinDiv {
   opacity: 1;
+  cursor: pointer;
 }
 
 .fa-trash {
