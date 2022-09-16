@@ -88,7 +88,7 @@ button:not([disabled]) {
   position: relative;
 }
 
-.meme img {
+.meme-template {
   border-radius: 10px;
   transition: .5s ease;
   backface-visibility: hidden;
@@ -136,7 +136,7 @@ button:not([disabled]) {
   text-align: center;
 }
 
-.gallery .meme:hover img {
+.gallery .meme:hover .meme-template {
   opacity: 0.3;
 }
 .gallery .meme:hover .trashBinDiv {
